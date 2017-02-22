@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>h-opc-cli</id>
+    <title>H-OPC CLI (Portable)</title>
+    <version>0.8.1</version>
+    <authors>Hyla Soft USA, Inc.</authors>
+    <owners>jmbeach</owners>
+    <summary>Installs the portable executable, h-opc-cli.exe</summary>
+    <description>Installs the portable executable, h-opc-cli.exe
+    </description>
+		<projectUrl>https://github.com/hylasoft-usa/h-opc</projectUrl>
+    <tags>hylasoft opc opc-da simulator admin</tags>
+    <copyright>2016 Hyla Soft</copyright>
+		<licenseUrl>https://github.com/hylasoft-usa/h-opc/blob/master/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <releaseNotes>Initial release</releaseNotes>
+    <packageSourceUrl>https://github.com/jmbeach/chocolatey</packageSourceUrl>
+    <iconUrl>http://www.cnmosoft.com/soft-icon/32x32/8/229/1864059.f104648bb4f1d6cfb876f31891028d6e.png</iconUrl>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
