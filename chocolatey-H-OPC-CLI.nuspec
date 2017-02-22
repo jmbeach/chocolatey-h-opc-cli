@@ -17,7 +17,7 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <releaseNotes>Initial release</releaseNotes>
     <packageSourceUrl>https://github.com/jmbeach/chocolatey</packageSourceUrl>
-    <iconUrl>http://www.cnmosoft.com/soft-icon/32x32/8/229/1864059.f104648bb4f1d6cfb876f31891028d6e.png</iconUrl>
+		<iconUrl>https://github.com/jmbeach/chocolatey-h-opc-cli/raw/master/icons/icon.png</iconUrl>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
