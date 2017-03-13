@@ -7,8 +7,10 @@
     <version>0.8.1</version>
     <authors>Hyla Soft USA, Inc.</authors>
     <owners>jmbeach</owners>
-    <summary>Installs the portable executable, h-opc-cli.exe</summary>
-    <description>Installs the portable executable, h-opc-cli.exe
+		<summary>Installs h-opc-cli.exe (https://github.com/hylasoft-usa/h-opc/tree/v0.9.0#command-line).</summary>
+		<description>Installs the portable executable, h-opc-cli.exe (https://github.com/hylasoft-usa/h-opc/tree/v0.9.0#command-line) into the windows PATH. 
+			h-opc-cli is a tool for reading, writing, and monitoring OPC UA and DA servers from the command line.
+			Call it from the command line like so: "h-opc-cli.exe [OpcType] [server-url]".
     </description>
 		<projectUrl>https://github.com/hylasoft-usa/h-opc</projectUrl>
     <tags>hylasoft opc opc-da simulator admin</tags>
@@ -16,7 +18,7 @@
 		<licenseUrl>https://github.com/hylasoft-usa/h-opc/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <releaseNotes>Initial release</releaseNotes>
-    <packageSourceUrl>https://github.com/jmbeach/chocolatey</packageSourceUrl>
+    <packageSourceUrl>https://github.com/jmbeach/chocolatey-h-opc-cli</packageSourceUrl>
 		<iconUrl>https://github.com/jmbeach/chocolatey-h-opc-cli/raw/master/icons/icon.png</iconUrl>
   </metadata>
   <files>
