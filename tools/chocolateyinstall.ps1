@@ -1,14 +1,11 @@
-﻿$packageName = 'h-opc-cli'
-$url = 'https://github.com/hylasoft-usa/h-opc/releases/download/v0.8.1/h-opc-cli.zip'
-$url64 = 'https://github.com/hylasoft-usa/h-opc/releases/download/v0.8.1/h-opc-cli.zip'
-$checksum = 'E9DC9A9BEAA57DBA5C188EAA3164896EFA5F9DA067AD4BA6E1D4606409793406'
-$checksumType = 'sha256'
-$checksum64 = 'E9DC9A9BEAA57DBA5C188EAA3164896EFA5F9DA067AD4BA6E1D4606409793406'
-$checksumType64 = 'sha256'
+﻿$toolsPath = Split-Path $MyInvocation.MyCommand.Definition
 $fileName = 'h-opc-cli.zip'
-$toolsPath = Split-Path $MyInvocation.MyCommand.Definition
-$zipPath = "$toolsPath\$fileName"
+$packageArgs = @{
+	packageName			= 'h-opc-cli'
+	url							= 'https://github.com/hylasoft-usa/h-opc/releases/download/v0.9.0/h-opc-cli.0.9.0.zip'
+	unzipLocation		= $toolsPath
+	checksum				= '9983975FB120B9A1F136CB56F7CE8A36D7D5FCF50E7F841062AFFF3CF820A007'
+	checksumType		= 'sha256'
+}
 
-Get-ChocolateyWebFile -PackageName $packageName -FileFullPath $zipPath -Url $url -Url64bit $url64 -Checksum $checksum -ChecksumType $checksumType -Checksum64 $checksum64 -ChecksumType64 $checksumType64
-Get-ChocolateyUnzip -PackageName $packageName -FileFullPath $zipPath -Destination $toolsPath
-rm $zipPath -ea 0
+Install-ChocolateyZipPackage @packageArgs
